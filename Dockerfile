@@ -1,4 +1,4 @@
-# An old base image nobody has updated in years
+# Current base image, patched at build time, with security headers
 FROM nginx:stable-alpine
 RUN apk upgrade --no-cache
 COPY nginx/security-headers.conf /etc/nginx/conf.d/security-headers.conf
